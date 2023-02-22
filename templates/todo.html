@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>TODO!</h1>
+  <p>Here are the things we need to do today:</p>
+  <ul>
+    {% for task in todos %}
+      <li><p>{{ task }}</p></li>
+    {% endfor %}
+    
+  </ul>
+{% endblock %}
